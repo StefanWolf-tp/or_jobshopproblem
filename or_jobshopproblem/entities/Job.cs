@@ -5,18 +5,18 @@
         public int JobId { get; set; }
         public List<JobTask> JobTaskList { get; set; } = new List<JobTask>();
 
-        public int WaferCount { get; set; }
+        public int UnitAmount { get; set; }
 
         public Job(int id, int wc)
         {
             this.JobId = id;
-            this.WaferCount = wc;
+            this.UnitAmount = wc;
         }
 
         public Job(int id, int wc, List<JobTask> jobTaskList)
         {
             this.JobId = id;
-            this.WaferCount = wc;
+            this.UnitAmount = wc;
             this.JobTaskList = jobTaskList;
         }
 
